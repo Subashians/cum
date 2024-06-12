@@ -2,6 +2,10 @@ import requests
 import time
 from discord_webhook import DiscordWebhook
 
+webhook_url = 'https://discord.com/api/webhooks/1249091717928583249/CztKWXQHXRU7kTVs1PqRg4EZxA8mwGE4llKgVsDGw9rEyiPrGNtrj27s3RiewyQNW0cW'
+webhook = DiscordWebhook(url=webhook_url, content='SCRIPT INITIALIZED')
+response = webhook.execute()
+
 def fetch_data():
     url = "https://biggamesapi.io/api/clan/Gewp"
     headers = {
